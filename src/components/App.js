@@ -112,17 +112,8 @@ const App = () => {
           })}
         >
           <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              className={clsx(classes.menuButton, open && classes.hide)}
-            >
-              <MenuIcon />
-            </IconButton>
             <Typography variant="h6" noWrap>
-              Agile ChatBot
+              Clientes App
           </Typography>
           </Toolbar>
         </AppBar>
@@ -136,28 +127,7 @@ const App = () => {
           }}
         >
           <div className={classes.drawerHeader}>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-            </IconButton>
           </div>
-          <Divider />
-          <List>
-            <ListItem button key={1} component={cadastroLink}>
-              <ListItemIcon><AddCircleIcon /></ListItemIcon>
-              <ListItemText primary="Cadastrar" />
-            </ListItem>
-            <ListItem button key={2} component={consultaLink}>
-              <ListItemIcon><SearchIcon /></ListItemIcon>
-              <ListItemText primary="Consultar" />
-            </ListItem>
-          </List>
-          <Divider />
-          <List>
-            <ListItem button key={1} component={sobreLink}>
-              <ListItemIcon><InfoIcon /></ListItemIcon>
-              <ListItemText primary="Sobre" />
-            </ListItem>
-          </List>
         </Drawer>
         <main
           className={clsx(classes.content, {

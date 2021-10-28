@@ -8,16 +8,7 @@ export default (props) => {
     return (
         <Switch>
             <Route exact path="/">
-                Seja bem Vindo
-            </Route>
-            <Route exact path="/cadastro">
                 <AddUserForm />
-            </Route>
-            <Route exact path="/consulta">
-                <UserTable />
-            </Route>
-            <Route exact path="/sobre">
-                <Sobre />
             </Route>
         </Switch>
     )
